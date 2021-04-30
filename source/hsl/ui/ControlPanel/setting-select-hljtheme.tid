@@ -1,0 +1,35 @@
+caption: Select theme
+created: 20210430112337726
+modified: 20210430141249479
+tags: $:/kookma/Explorer
+title: $:/plugins/kookma/hsl/ui/ControlPanel/setting-select-hljtheme
+type: text/vnd.tiddlywiki
+
+\define checked()
+<$list filter="[all[tiddlers+shadows]prefix[$:/plugins/kookma/hsl/highlightjs/themes/]] [[$:/plugins/tiddlywiki/highlight/highlight.css]] [[$:/plugins/tiddlywiki/highlight/styles]] -[[$(currentTiddler)$]]">
+<$action-listops $tags="-$:/tags/Stylesheet"/>
+</$list>
+\end
+
+''Set Highlight.js Theme''
+
+Search in theme: &nbsp;<$edit-text tiddler="$:/temp/hsl/hlj-select-theme" tag=input default="" class="theme-search-box"/>
+
+<$list filter="[all[tiddlers+shadows]prefix[$:/plugins/kookma/hsl/highlightjs/themes/]sort[]]+[search:title{$:/temp/hsl/hlj-select-theme}]">
+<$checkbox tag="$:/tags/Stylesheet" checkactions=<<checked>> > <$link/></$checkbox><br>
+</$list>
+  --- The basic themes from Tiddlywiki official plugins <br>
+<$list filter="[[$:/plugins/tiddlywiki/highlight/highlight.css]] [[$:/plugins/tiddlywiki/highlight/styles]] +[search:title{$:/temp/hsl/hlj-select-theme}]">
+<$checkbox tag="$:/tags/Stylesheet" checkactions=<<checked>> > <$link/></$checkbox><br>
+</$list>
+
+
+
+<style>
+.theme-search-box {
+    border:none;
+    border-bottom: 1px dotted #000;
+    padding: 5px 10px;
+    outline: none;
+ }
+</style>
