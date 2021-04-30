@@ -2,7 +2,7 @@
 
 Highlight selected lines (hsl) extracts text or code from a given source, display them using the $codeblock and highlights selected lines or ranges of lines to be emphasized!
 
-For syntax highlighting  the (highlight.js)[https://highlightjs.org/] is used through an official Tiddlywiki plugin!
+For syntax highlighting  the [highlight.js](https://highlightjs.org/) is used through an official Tiddlywiki plugin!
 
 
 # Demo
