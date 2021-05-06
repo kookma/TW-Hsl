@@ -1,7 +1,7 @@
 caption: Hsl
 created: 20210430082658911
 list-after: $:/core/ui/ControlPanel/Settings/TiddlyWiki
-modified: 20210430113329281
+modified: 20210506183828496
 tags: $:/tags/ControlPanel/SettingsTab $:/tags/MoreSideBar
 title: $:/plugins/kookma/hsl/ui/ControlPanel/Settings
 type: text/vnd.tiddlywiki
@@ -23,7 +23,7 @@ These settings let you customise the behaviour of Highlight Selected Lines (hsl)
 {{$:/plugins/kookma/hsl/ui/ControlPanel/setting-switch-gutter}}
 
 <!-- HighlightJs mode -->
-<$list filter="[[$:/plugins/tiddlywiki/highlight]is[tiddler]] +[[$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/highlight]get[text]!match[yes]]" variable=null>
+<$list filter="[[$:/plugins/tiddlywiki/highlight]!is[missing]] :filter[lookup:no[$:/config/Plugins/Disabled/]match[no]]" variable=null>
 
 {{$:/plugins/kookma/hsl/ui/ControlPanel/setting-select-hljtheme}}
 </$list>

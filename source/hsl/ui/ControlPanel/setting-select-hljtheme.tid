@@ -1,6 +1,6 @@
 caption: Select theme
 created: 20210430112337726
-modified: 20210430141249479
+modified: 20210506184256756
 tags: $:/kookma/Explorer
 title: $:/plugins/kookma/hsl/ui/ControlPanel/setting-select-hljtheme
 type: text/vnd.tiddlywiki
@@ -13,7 +13,7 @@ type: text/vnd.tiddlywiki
 
 ''Set Highlight.js Theme''
 
-Search in theme: &nbsp;<$edit-text tiddler="$:/temp/hsl/hlj-select-theme" tag=input default="" class="theme-search-box"/>
+Search in theme: &nbsp;<$edit-text tiddler="$:/temp/hsl/hlj-select-theme" tag=input default="" class="hsl-search-box"/>
 
 <$list filter="[all[tiddlers+shadows]prefix[$:/plugins/kookma/hsl/highlightjs/themes/]sort[]]+[search:title{$:/temp/hsl/hlj-select-theme}]">
 <$checkbox tag="$:/tags/Stylesheet" checkactions=<<checked>> > <$link/></$checkbox><br>
@@ -22,14 +22,3 @@ Search in theme: &nbsp;<$edit-text tiddler="$:/temp/hsl/hlj-select-theme" tag=in
 <$list filter="[[$:/plugins/tiddlywiki/highlight/highlight.css]] [[$:/plugins/tiddlywiki/highlight/styles]] +[search:title{$:/temp/hsl/hlj-select-theme}]">
 <$checkbox tag="$:/tags/Stylesheet" checkactions=<<checked>> > <$link/></$checkbox><br>
 </$list>
-
-
-
-<style>
-.theme-search-box {
-    border:none;
-    border-bottom: 1px dotted #000;
-    padding: 5px 10px;
-    outline: none;
- }
-</style>
