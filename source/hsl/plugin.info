@@ -3,10 +3,10 @@
     "name": "Highlight Selected Lines",
     "description": "Extract the content and stand out specific lines and/or line ranges",
     "author": "Mohammad Rahmani",
-    "version": "1.0.1",
-    "core-version": "5.1.24-prerelease",
+    "version": "1.2.0",
+    "core-version": "",
     "source": "https://github.com/kookma/TW-Hsl",
     "list": "readme license history",
-    "plugin-type": "plugin",
-    "dependents": "$:/plugins/tiddlywiki/highlight"
+    "dependents": "$:/plugins/tiddlywiki/highlight",
+    "plugin-type": "plugin"
 }

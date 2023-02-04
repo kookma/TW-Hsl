@@ -1,0 +1,35 @@
+code-body: yes
+tags: 
+title: $:/plugins/kookma/hsl/macros/utility
+type: text/vnd.tiddlywiki
+
+\define lines2list() {{{[range[$(start)$,$(stop)$]addsuffix[ ]]}}}
+
+\define rawlist()
+<$list filter="[<__hlrange__>split[,]split[ ]!is[blank]]" variable=num>
+<$list filter="[<num>search:title[-]]" emptyMessage=<<num>> variable=vlines>
+<$let start= {{{ [<vlines>split[-]first[]] }}}
+      stop=  {{{ [<vlines>split[-]last[]] }}} >
+        <<lines2list>>
+</$let>			 
+</$list>
+</$list>
+\end rawlist
+
+<!-- copy-to-clipboard is a clone of core macro -->
+
+\define hsl-copy-to-clipboard(src,class:"tc-btn-invisible",style)
+\whitespace trim
+<$button class=<<__class__>> style=<<__style__>> message="tm-copy-to-clipboard" param=<<__src__>> tooltip={{$:/language/Buttons/CopyToClipboard/Hint}}>
+{{$:/core/images/copy-clipboard}}
+</$button>
+\end
+
+\define hsl-copy-to-clipboard-above-right(src,class:"tc-btn-invisible",style)
+\whitespace trim
+<div class="hsl-copy-clipboard-outer">
+<div class="hsl-copy-clipboard-inner">
+<$macrocall $name="hsl-copy-to-clipboard" src=<<__src__>> class=<<__class__>> style=<<__style__>>/>
+</div>
+</div>
+\end

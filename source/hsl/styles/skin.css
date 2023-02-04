@@ -1,0 +1,22 @@
+/* adjust the opacity and */
+.code-list  pre,
+.code-list li::before {
+	opacity:0.3; 
+}
+
+/* opacity for emphasized lines*/
+.code-list .code-selected pre,
+ol.code-list li.code-selected::before {
+	opacity:1;
+}
+
+/* left border of list */
+ol.code-list li {
+	border-left: 3px solid;
+}
+
+/* font and size of line number: remove if you dont like */
+ol.code-list li::before {
+	font-size:1em;
+	font-family:monospace;
+}	

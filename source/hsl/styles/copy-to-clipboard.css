@@ -1,0 +1,12 @@
+.hsl-copy-clipboard-outer{
+	position: relative;
+	z-index:2;
+	opacity:0.3;
+}
+.hsl-copy-clipboard-inner{
+	position: absolute;
+	bottom: -20px; right: 0;
+}
+.hsl-copy-clipboard-outer:hover{
+	opacity:1;
+}

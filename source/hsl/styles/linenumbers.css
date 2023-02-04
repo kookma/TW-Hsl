@@ -1,26 +1,26 @@
 /* style the line numbers */
 ol.code-list {
 	counter-reset: linenumber;
-	position: relative;
 }
 ol.code-list li {
 	counter-increment: linenumber;
+	position: relative;
+	margin-left: 3em;
 }
-
 /* customize the number */
 ol.code-list li::before {
 	/*	content: counter(linenumber) " ";*/
-	left:5px;
 	position: absolute;
-	width: 26px;
+	width: 3em;
+	left:-3em;
+	top:-0.5em;
 	text-align: right;
+	vertical-align: middle;
+	padding:6px 10px 4px;
 
-	/* remove if not needed */
-	color:#999;
-	font-size:0.9em;
-	font-family:monospace;
 }
 
+/* display line number only for selected lines */
 ol.code-list li.code-selected::before {
 	content: counter(linenumber) " ";
 }
