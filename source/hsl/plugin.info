@@ -3,7 +3,7 @@
     "name": "Highlight Selected Lines",
     "description": "Extract the content and stand out specific lines and/or line ranges",
     "author": "Mohammad Rahmani",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "core-version": "",
     "source": "https://github.com/kookma/TW-Hsl",
     "list": "readme license history",

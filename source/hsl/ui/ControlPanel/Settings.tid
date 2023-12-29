@@ -1,5 +1,6 @@
 caption: Hsl
 list-after: $:/core/ui/ControlPanel/Settings/TiddlyWiki
+modified: 20231229042806833
 tags: $:/tags/ControlPanel/SettingsTab $:/tags/MoreSideBar
 title: $:/plugins/kookma/hsl/ui/ControlPanel/Settings
 type: text/vnd.tiddlywiki
